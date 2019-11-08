@@ -1,0 +1,278 @@
+@charset "UTF-8";
+body{
+	background: black;
+	overflow-x: hidden;
+	cursor: help;
+}
+
+div{
+	position: fixed;
+	width: auto;
+	height: auto;
+}
+
+a{
+	color:purple;
+	text-decoration: none;
+}
+
+a:hover{
+	color:white;
+}
+
+.div1{
+	top:100px;
+	text-align: center;
+	padding-left: 30vh;
+	padding-right: 30vh;
+	font-family: Cochin;
+	font:200;
+	font-size: 40px;
+	color:aliceblue; 
+	opacity: 1;
+	animation: appear 5s ease-in ;
+}
+
+@keyframes appear {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.div2{
+	top:270px;
+	text-align: center;
+	padding-left: 17vh;
+	padding-right: 17vh;
+	font-family: Avenir;
+	font-size: 18px;
+	color:white; 
+}
+
+.div3{
+	position:absolute;
+	top:72vh;
+	text-align: center;
+	padding-left: 19vh;
+	padding-right: 19vh;
+	font-family: Avenir;
+	color:#ffff80; 
+}
+
+.circles{
+	opacity:1;
+	position: absolute;
+	animation-name: wiggle;
+	animation-iteration-count:infinite;
+	animation-duration: 5s;
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(10deg);}
+  25% {transform: rotate(-10deg);}
+  50% {transform: rotate(20deg);}
+  75% {transform: rotate(-10deg);}
+  100% {transform: rotate(10deg);}
+}
+
+.circle1{
+	width:200px;
+	height:200px;
+	top:30vh;
+	left:30vw;
+}
+
+.circle2{
+	width:100px;
+	height:100px;
+	top:55vh;
+	left:55vw;
+}
+
+.circle3{
+	width:150px;
+	height:150px;
+	top:65vh;
+	left:80vw;
+}
+
+.circle4{
+	width:100px;
+	height:100px;
+	top:5vh;
+	left:80vw;
+}
+
+.circle5{
+	width:100px;
+	height:100px;
+	top:75vh;
+	left:20vw;
+}
+
+.circle6{
+	width:115px;
+	height:115px;
+	top:10vh;
+	left:10vw;
+}
+
+.circle7{
+	width:135px;
+	height:135px;
+	top:15vh;
+	left:60vw;
+}
+
+img:hover {
+	animation-name: pulse;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse{
+	0% {transform: scale(1.25);}
+	20% {transform: scale(1.5);}
+	40% {transform: scale(1.75);}
+	60% {transform: scale(1.5);}
+	80% {transform: scale(1.25);}
+	100% {transform: scale(1);}
+}
+
+.pics{
+	position: absolute;
+	align-items: center;
+	width:100vmin;
+	height:150vmin;
+}
+
+.pic:hover {
+	animation: pulse !important;
+}
+
+#pic1{
+	top:-25vh;
+	left:23.5vw;
+	transform: rotate(90deg);
+}
+
+#pic2{
+	top:-25vh;
+	left:23vw;
+	transform: rotate(-90deg);
+}
+
+#pic3{
+	top:-25vh;
+	left:23.5vw;
+	transform: rotate(90deg);
+}
+
+#pic4{
+	top:-25vh;
+	left:23.5vw;
+	transform: rotate(90deg);
+}
+
+#pic5{
+	top:-25vh;
+	left:23.5vw;
+	transform: rotate(90deg);
+}
+
+#pic6{
+	top:-25vh;
+	left:23.5vw;
+	transform: rotate(90deg);
+}
+
+/*.rollingquotes{
+	position:absolute;
+	z-index:1;
+/*	animation: pulse !important;*/
+/*}*/*/
+
+.quote1{
+	position: absolute;
+	width:1700px;
+	height:65px;
+	top:30vh;
+}
+
+.quote2{
+	position: absolute;
+	width:2600px;
+	height:80px;
+	top:5vh;
+}
+
+.quote3{
+	position: absolute;
+	width:1000px;
+	height:40px;
+	top:60vh;
+}
+
+.quote4{
+	position: absolute;
+	width:5000px;
+	height:200px;
+	top:50vh;
+}
+
+.quote5{
+	position: absolute;
+	width:3000px;
+	height:200px;
+	top:10vh;
+}
+
+.quote6{
+	position: absolute;
+	top:40vh;
+	width:2400px;
+	height:80px;
+}
+
+.divquote1{
+	z-index: 1;
+	animation:rollacross;
+	animation-duration: 35s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rollacross{
+	from {left:95%}
+	to {left:-90%}
+}
+
+ .divquote2{
+	z-index: 1;
+	animation:rollacrossopp;
+	animation-duration: 35s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rollacrossopp{
+	from {left:-181%}
+	to {left:100%}
+}
+
+ .divquote3{
+	z-index: 1;
+	animation:rollacrossopptwo;
+	animation-duration: 45s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rollacrossopptwo{
+	from {left:-350%}
+	to {left:100%}
+}
+
+
+
+
+
+
+
+
